@@ -1,6 +1,3 @@
-# Audio-Signal-Filter
-MATLAB implementation of a 50 Hz notch filter to remove power-line noise from audio signals, with FFT-based before/after analysis.
-
 # Audio Notch Filter — Power-Line Noise Removal
 A MATLAB project that removes 50 Hz power-line noise from an audio signal using a digital notch filter, verified through FFT spectrum analysis.
 

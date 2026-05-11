@@ -1,19 +1,13 @@
-# Audio Notch Filter — Power-Line Noise Removal
+# Audio Notch Filter (Power-Line Noise Removal)
 A MATLAB project that removes 50 Hz power-line noise from an audio signal using a digital notch filter, verified through FFT spectrum analysis.
 
 ## What This Project Does
-Power-line interference (50 Hz in Pakistan/most of the world) is one of the most common sources of noise in audio and sensor systems. This project simulates a clean 440 Hz audio tone, corrupts it with synthetic 50 Hz noise, then designs and applies a notch filter to remove it — measuring the attenuation achieved.
+Power-line interference (50 Hz in Pakistan/most of the world) is one of the most common sources of noise in audio and sensor systems. This project simulates a clean 440 Hz audio tone, corrupts it with synthetic 50 Hz noise, then designs and applies a notch filter to remove it, measuring the attenuation achieved.
 
 ## Results
 - **Noise frequency targeted:** 50 Hz
 - **Attenuation achieved:** 13.1 dB
 - **Signal frequency preserved:** 440 Hz
-
-### FFT Before Filtering
-![FFT before](plots/fft_before.png)
-
-### FFT After Filtering
-![FFT after](plots/fft_after.png)
 
 ## How It Works
 1. A 440 Hz sine wave is generated as the clean signal
@@ -42,5 +36,5 @@ audio-notch-filter/
 
 ## What I Learned
 - How digital notch filters work at a signal level
-- FFT interpretation — reading frequency domain plots to identify noise sources
+- FFT interpretation: Reading frequency domain plots to identify noise sources
 - Practical application of IIR filter design for real-world noise (50 Hz is literally present in every electrical system in Pakistan)
